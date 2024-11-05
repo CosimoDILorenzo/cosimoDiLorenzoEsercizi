@@ -20,11 +20,13 @@ class ContoBancario:
 
     def deposita(self,importo):
         if importo > 0:
-            self.__saldo = self.get_saldo() + importo
+            self.__saldo += importo
+        else:
+            print("Importo non valido")    
 
     def preleva(self,importo):
         if importo < self.get_saldo():
-            self.__saldo = self.get_saldo() - importo
+            self.__saldo -= importo
         else:
             print("Fondi insufficienti")
 
