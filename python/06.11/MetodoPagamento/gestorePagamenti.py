@@ -17,4 +17,4 @@ carta = CartaDiCredito()
 
 gestore = GestorePagamenti(bb)
 
-gestore.effettua_pagamento()
+gestore.effettua_pagamento(200)
