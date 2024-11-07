@@ -32,12 +32,6 @@ class Cliente():
 
 
 
-
-
-rist.menu = {
-    "pizza": ["pomodoro", "mozzarella", "basilico"],"pasta": ["sugo di pomodoro", "parmigiano"],"insalata": ["lattuga", "pomodorini", "olio d'oliva"]
-}
-
 cliente1 = Cliente()
 
 # cliente1.mostra_menu()
