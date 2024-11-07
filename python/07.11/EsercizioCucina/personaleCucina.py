@@ -1,8 +1,9 @@
 class PersonaleCucina:
-    def __init__(self,nome,eta,piatti = []):
+    def __init__(self,nome,eta):
         self.__nome = nome
         self.__eta = eta
-        self.piatti = piatti
+        self.piatti = []
+        self.ingredienti = []
 
     def get_nome(self):
         return self.__nome

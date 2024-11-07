@@ -1,8 +1,8 @@
 from personaleCucina import PersonaleCucina
 
 class SousChef(PersonaleCucina):
-    def __init__(self,nome,eta,piatti,preparazione):
-        super().__init__(nome, eta, piatti)
+    def __init__(self,nome,eta,preparazione):
+        super().__init__(nome, eta)
         self.__preparazione = preparazione
 
     def get_preparazione(self):
@@ -16,3 +16,10 @@ class SousChef(PersonaleCucina):
 
     def gestisci_inventario(self):
         print(f"Il {SousChef.__class__.__name__} sta gestendo l'inventario")
+
+    def cucina(self,piatto):
+        if piatto.lower() == "tagliata":
+            self.piatti.append(piatto)
+            self.ingredienti.append(["Carne","Rucola","Grana","Pomodori"])
+        else: 
+            print("Lo chef cucina solo la tagliata")
